@@ -5,7 +5,7 @@
 #define D0 PORTBbits.RB7
 #define D1 PORTBbits.RB6
 #define D2 PORTBbits.RB5
-#define D3 PORTCbits.RC4
+#define D3 PORTCbits.RB4
 #define D4 PORTBbits.RB3
 #define D5 PORTBbits.RB2
 #define D6 PORTBbits.RB1
