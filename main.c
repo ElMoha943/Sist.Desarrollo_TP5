@@ -31,7 +31,7 @@ void main(){
     
     //Configura puerto AD
     ANSELH=0;
-    ANSELHbits.ANS9=1; 
+    ANSELHbits.ANS1=1; 
     ADCON1bits.ADFM=1;
     ADCON1bits.VCFG0=0; ADCON1bits.VCFG1=0;
     ADCON0bits.ADON=1;
@@ -40,8 +40,8 @@ void main(){
     InicializarDisplay();
     while(1){
         //MIDE TEMPERATURA
-        GO_DONE=1; // empieza la conversión
-        __delay_ms(1); // espera el fin de la conversión
+        GO_DONE=1; // empieza la conversiÃ³n
+        __delay_ms(1); // espera el fin de la conversiÃ³n
         resultado=ADRESH<<8;
         resultado=resultado+ADRESL; //0-1024
         while(resultado>9){
