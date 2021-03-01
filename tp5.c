@@ -32,6 +32,7 @@ void InicializarDisplay(void){
 }
 
 void BorrarDisplay(void){
+    //Display Clear
     RS=0; E=1;
     D7=0; D6=0; D5=0; D4=0;
     D3=0; D2=0; D1=0; D0=1;
@@ -41,22 +42,8 @@ void BorrarDisplay(void){
 
 void Posicionar(unsigned char pos, unsigned char linea){
     unsigned char cosa, i=0;
-    if(linea<3 && linea>0){
-        //seleccion de linea
-        if(linea==1) cosa=0;
-        else cosa=64;
-    }
-    else{
-        return;
-    }
-    if(pos<17 && pos>0){
-        //lectura de posicion
-        pos=pos+cosa;
-    }
-    else{
-        return;
-    }
-    //Seleccion de posicion
+    if(linea==1) pos = pos | 0x80;
+    else pos = pos | 0x40 | 0x80;
     RS=0; E=1;
     PORTC=pos;
     E=0;
