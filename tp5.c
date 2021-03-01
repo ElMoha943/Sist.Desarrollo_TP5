@@ -32,7 +32,7 @@ void InicializarDisplay(void){
 }
 
 void BorrarDisplay(void){
-    RS=0; RW=0; E=1;
+    RS=0; E=1;
     D7=0; D6=0; D5=0; D4=0;
     D3=0; D2=0; D1=0; D0=1;
     E=0;
@@ -57,7 +57,7 @@ void Posicionar(unsigned char pos, unsigned char linea){
         return;
     }
     //Seleccion de posicion
-    RS=0; RW=0 ;E=1;
+    RS=0; E=1;
     PORTC=pos;
     E=0;
     __delay_ms(1);
