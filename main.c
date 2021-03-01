@@ -36,14 +36,20 @@ void main(){
     ADCON1bits.VCFG1=0;
     ADCON0bits.ADON=1;
     ADCON0bits.CHS=1;
-
+    
+    //Variables
     float valor;
     unsigned int caca;
     char cosa[50];
+    
     InicializarDisplay();
     BorrarDisplay();
+    Posicionar(1,1);
+    printf("Temperatura:");
+    
     while (1)
     {
+        //Medicion de temperatura
         ADCON0bits.GO=1;
         while (ADCON0bits.GO==1)
         {
@@ -51,7 +57,9 @@ void main(){
         caca= (ADRESH<<8)+ADRESL;
         __delay_ms(2);
         valor= (((float)caca)*5/1023)*100;
-        Posicionar(1,1);
-        printf("Valor: %.1f",valor);
+        
+        //Muestreo en display
+        Posicionar(5,2);
+        printf("%.1f",valor);
     }
 }
