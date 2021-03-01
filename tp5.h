@@ -14,6 +14,8 @@
 #define RS PORTBbits.RB7
 #define E PORTBbits.RB5
 
+//VARIABLES
+
 //FUNCIONES
 void InicializarDisplay(void);
 void BorrarDisplay(void);
