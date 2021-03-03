@@ -20,7 +20,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "tp5.h"
-#include <string.h>
 
 void main(){
     //Configura entradas y salidas
