@@ -40,7 +40,6 @@ void main(){
     //Variables
     float valor;
     unsigned int caca;
-    char cosa[50];
     
     InicializarDisplay();
     BorrarDisplay();
@@ -52,8 +51,6 @@ void main(){
         //Medicion de temperatura
         ADCON0bits.GO=1;
         while (ADCON0bits.GO==1)
-        {
-        }
         caca= (ADRESH<<8)+ADRESL;
         __delay_ms(2);
         valor= (((float)caca)*5/1023)*100;
