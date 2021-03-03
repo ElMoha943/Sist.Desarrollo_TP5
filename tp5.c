@@ -36,7 +36,7 @@ void BorrarDisplay(void){
     D7=0; D6=0; D5=0; D4=0;
     D3=0; D2=0; D1=0; D0=1;
     E=0;
-    __delay_ms(1);
+    __delay_ms(10);
 }
 
 void Posicionar(unsigned char pos, unsigned char linea){
