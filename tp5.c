@@ -2,7 +2,6 @@
 #include "tp5.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 void InicializarDisplay(void){
     //Display on/off
