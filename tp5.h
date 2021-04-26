@@ -2,14 +2,6 @@
 #define	TP5_H
 
 #define _XTAL_FREQ 4000000
-#define D0 PORTCbits.RC0
-#define D1 PORTCbits.RC1
-#define D2 PORTCbits.RC2
-#define D3 PORTCbits.RC3
-#define D4 PORTCbits.RC4
-#define D5 PORTCbits.RC5
-#define D6 PORTCbits.RC6
-#define D7 PORTCbits.RC7
 
 #define RS PORTBbits.RB7
 #define E PORTBbits.RB5
