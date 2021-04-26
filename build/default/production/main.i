@@ -2568,7 +2568,7 @@ extern int printf(const char *, ...);
 # 21 "main.c" 2
 
 # 1 "./tp5.h" 1
-# 20 "./tp5.h"
+# 12 "./tp5.h"
 void InicializarDisplay(void);
 void BorrarDisplay(void);
 void Posicionar(unsigned char pos, unsigned char linea);

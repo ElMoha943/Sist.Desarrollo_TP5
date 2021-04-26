@@ -57,14 +57,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1197
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f886.h: 1197: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
 [v _ADCON0bits `VS42 ~T0 @X0 0 e@31 ]
-"20 ./tp5.h
-[; ;./tp5.h: 20: void InicializarDisplay(void);
+"12 ./tp5.h
+[; ;./tp5.h: 12: void InicializarDisplay(void);
 [v _InicializarDisplay `(v ~T0 @X0 0 ef ]
-"21
-[; ;./tp5.h: 21: void BorrarDisplay(void);
+"13
+[; ;./tp5.h: 13: void BorrarDisplay(void);
 [v _BorrarDisplay `(v ~T0 @X0 0 ef ]
-"22
-[; ;./tp5.h: 22: void Posicionar(unsigned char pos, unsigned char linea);
+"14
+[; ;./tp5.h: 14: void Posicionar(unsigned char pos, unsigned char linea);
 [v _Posicionar `(v ~T0 @X0 0 ef2`uc`uc ]
 "195 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]

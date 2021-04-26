@@ -2374,7 +2374,7 @@ extern __bank0 __bit __timeout;
 # 1 "tp5.c" 2
 
 # 1 "./tp5.h" 1
-# 20 "./tp5.h"
+# 12 "./tp5.h"
 void InicializarDisplay(void);
 void BorrarDisplay(void);
 void Posicionar(unsigned char pos, unsigned char linea);
@@ -2586,10 +2586,9 @@ void InicializarDisplay(void){
 void BorrarDisplay(void){
 
     PORTBbits.RB7=0; PORTBbits.RB5=1;
-    PORTCbits.RC7=0; PORTCbits.RC6=0; PORTCbits.RC5=0; PORTCbits.RC4=0;
-    PORTCbits.RC3=0; PORTCbits.RC2=0; PORTCbits.RC1=0; PORTCbits.RC0=1;
+    PORTB=0b00000001;
     PORTBbits.RB5=0;
-    _delay((unsigned long)((1)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(4000000/4000.0)));
 }
 
 void Posicionar(unsigned char pos, unsigned char linea){
