@@ -33,8 +33,7 @@ void InicializarDisplay(void){
 void BorrarDisplay(void){
     //Display Clear
     RS=0; E=1;
-    D7=0; D6=0; D5=0; D4=0;
-    D3=0; D2=0; D1=0; D0=1;
+    PORTB=0b00000001;
     E=0;
     __delay_ms(10);
 }
